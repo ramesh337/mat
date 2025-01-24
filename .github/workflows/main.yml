@@ -49,5 +49,5 @@ jobs:
             docker rm test || true
             
             # Run the container with the new image
-            docker run --platform linux/amd64 -d -p 6060:8080 --name test  antonyajith/test:3.0
+            docker run --platform linux/amd64 -d -p 4040:80 --name test  antonyajith/test:3.0
             docker image prune -a -f
